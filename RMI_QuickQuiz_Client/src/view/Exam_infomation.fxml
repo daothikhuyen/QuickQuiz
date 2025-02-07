@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="829.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_ExamInfomation">
+   <children>
+      <Label prefHeight="43.0" prefWidth="829.0" style="-fx-background-color: #f9bbbb;" text="                                                           THÔNG TIN ĐỀ THI" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="257.0" fitWidth="325.0" layoutX="30.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/OnlineTesting.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="438.0" layoutY="155.0" prefHeight="414.0" prefWidth="358.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Mã Phòng Thi">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="64.0" text="Mã Đề Thi">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="114.0" text="Thời Gian">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="165.0" text="Số Lượng Câu Hỏi">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="215.0" text="Tiêu Đề">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="263.0" text="Người tạo">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="33.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: #00cd00;" text="Quay lại" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="197.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnStart" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: #ee2c2c;" text="Bắt Đầu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lb_Room" layoutX="175.0" layoutY="9.0" prefHeight="30.0" prefWidth="134.0" text="HP0" textFill="#120dae">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_code" layoutX="175.0" layoutY="59.0" prefHeight="30.0" prefWidth="134.0" text="HP0" textFill="#120dae">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Time" layoutX="175.0" layoutY="109.0" prefHeight="30.0" prefWidth="134.0" text="HP0" textFill="#120dae">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Quantity" layoutX="175.0" layoutY="160.0" prefHeight="30.0" prefWidth="134.0" text="HP0" textFill="#120dae">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Title" layoutX="175.0" layoutY="210.0" prefHeight="30.0" prefWidth="134.0" text="HP0" textFill="#120dae">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_creator" layoutX="175.0" layoutY="258.0" prefHeight="30.0" prefWidth="134.0" text="HP0" textFill="#120dae">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

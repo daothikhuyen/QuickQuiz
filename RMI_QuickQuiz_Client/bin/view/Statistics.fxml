@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_Statistics">
+   <children>
+      <Label prefHeight="55.0" prefWidth="829.0" style="-fx-background-color: #87ceeb;" text="                                                                 THỐNG KÊ" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="535.0" layoutY="53.0" prefHeight="503.0" prefWidth="293.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="110.0" prefHeight="20.0" prefWidth="120.0" text="Số Người Thi :" textFill="#578449">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="145.0" prefHeight="20.0" prefWidth="120.0" text="Điểm Cao Nhất :" textFill="#ff0c0c">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="182.0" prefHeight="20.0" prefWidth="120.0" text="Điểm Thấp Nhất :" textFill="#5da0b7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="54.0" layoutY="228.0" text="Điểm Trung Bình :" textFill="#e1de00">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="186.0" fitWidth="392.0" layoutX="64.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/statistics.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb_NumContestant" layoutX="196.0" layoutY="112.0" prefHeight="20.0" prefWidth="66.0" text="0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_ScoreMax" layoutX="196.0" layoutY="145.0" prefHeight="20.0" prefWidth="66.0" text="0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_ScoreMin" layoutX="196.0" layoutY="183.0" prefHeight="20.0" prefWidth="66.0" text="0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_ScoreAverage" layoutX="196.0" layoutY="228.0" prefHeight="20.0" prefWidth="66.0" text="0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table_Statistics" layoutX="14.0" layoutY="100.0" onMouseClicked="#HandClick_Exam" prefHeight="417.0" prefWidth="532.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="59.199978828430176" text="ID" />
+          <TableColumn fx:id="col_title" prefWidth="149.60003662109375" text="Tiêu Đề" />
+            <TableColumn fx:id="col_room" prefWidth="72.00007629394531" text="Phòng Thi" />
+            <TableColumn fx:id="col_quantity" prefWidth="84.79998779296875" text="Số Câu Hỏi" />
+            <TableColumn fx:id="col_totaltime" prefWidth="95.20001220703125" text="Thời Gian/Phút" />
+            <TableColumn fx:id="col_creator" prefWidth="72.79998779296875" text="Người Tạo" />
+        </columns>
+      </TableView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

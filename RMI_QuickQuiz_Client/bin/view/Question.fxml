@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="829.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_Question">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="829.0" style="-fx-background-color: #fef64b;" text="TẠO BỘ CÂU HỎI" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="63.0" text="Mã Đề Thi ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="102.0" text="Tiêu Đề">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtExamCode" editable="false" layoutX="115.0" layoutY="60.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="txtTitle" editable="false" layoutX="24.0" layoutY="131.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="258.0" layoutY="102.0" text="Số Lượng Câu Hỏi">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="749.0" layoutY="134.0" text="phút">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="18.0" layoutY="181.0" prefHeight="5.0" prefWidth="794.0" />
+      <Label layoutX="360.0" layoutY="63.0" text="Người Tạo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCreator" editable="false" layoutX="464.0" layoutY="60.0" prefHeight="26.0" prefWidth="216.0" />
+      <TextField fx:id="txtRoomCode" editable="false" layoutX="454.0" layoutY="131.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="454.0" layoutY="102.0" text="Mã Phòng Thi">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="634.0" layoutY="102.0" text="Thời Gian">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="204.0" text="Câu Hỏi Số :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="265.0" text="Câu Hỏi :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAnsA" layoutX="264.0" layoutY="334.0" prefHeight="26.0" prefWidth="362.0" />
+      <Label layoutX="101.0" layoutY="335.0" text="Đáp Án :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="335.0" text="A">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAnsD" layoutX="264.0" layoutY="464.0" prefHeight="26.0" prefWidth="362.0" />
+      <Label layoutX="229.0" layoutY="464.0" text="D">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAnsC" layoutX="264.0" layoutY="424.0" prefHeight="26.0" prefWidth="362.0" />
+      <Label layoutX="229.0" layoutY="425.0" text="C">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAnsB" layoutX="264.0" layoutY="378.0" prefHeight="26.0" prefWidth="362.0" />
+      <Label layoutX="229.0" layoutY="379.0" text="B">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="637.0" layoutY="335.0" text="Đáp Án Đúng :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="778.0" layoutY="335.0" text="A">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="779.0" layoutY="378.0" text="B">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="779.0" layoutY="424.0" text="C">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="778.0" layoutY="464.0" text="D">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdiA" layoutX="756.0" layoutY="338.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="GroupAns" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rdiD" layoutX="756.0" layoutY="468.0" mnemonicParsing="false" toggleGroup="$GroupAns" />
+      <RadioButton fx:id="rdiC" layoutX="756.0" layoutY="428.0" mnemonicParsing="false" toggleGroup="$GroupAns" />
+      <RadioButton fx:id="rdiB" layoutX="756.0" layoutY="382.0" mnemonicParsing="false" toggleGroup="$GroupAns" />
+      <Button layoutX="556.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnSave_Ques" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #e05b5c;" text="Lưu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="147.0" fitWidth="118.0" layoutX="24.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/question.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnNext" layoutX="204.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnNext_Ques" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: #d39c49;" text="Câu Tiếp Theo" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNumQuestion" editable="false" layoutX="258.0" layoutY="131.0" prefHeight="26.0" prefWidth="118.0" />
+      <TextField fx:id="txtTime" editable="false" layoutX="639.0" layoutY="130.0" prefHeight="26.0" prefWidth="86.0" />
+      <TextField fx:id="txtNum" editable="false" layoutX="235.0" layoutY="203.0" prefHeight="26.0" prefWidth="118.0" />
+      <Button fx:id="btn_Pre" layoutX="56.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnPre_Question" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: #3e4d68;" text="Câu Trước Đó" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtQuestion" layoutX="233.0" layoutY="246.0" prefHeight="63.0" prefWidth="490.0" />
+      <Button fx:id="btn_Update" layoutX="666.0" layoutY="543.0" mnemonicParsing="false" onAction="#Update_Question" prefHeight="30.0" prefWidth="141.0" style="-fx-background-color: #78c0c9;" text="Cập Nhập Bài Thi" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Complete" layoutX="693.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnComplete" prefHeight="20.0" prefWidth="86.0" style="-fx-background-color: #00cd00;" text="Hoàn Tất" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

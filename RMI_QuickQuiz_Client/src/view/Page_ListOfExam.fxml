@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="829.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_ListOfExam">
+   <children>
+      <Label alignment="CENTER" prefHeight="43.0" prefWidth="829.0" style="-fx-background-color: #1dbcc2;" text="DANH SÁCH ĐỀ THI" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="122.0" fitWidth="117.0" layoutX="651.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/clock.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="105.0" fitWidth="107.0" layoutX="25.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/exam.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="215.0" layoutY="63.0" prefHeight="126.0" prefWidth="396.0" style="-fx-border-color: #d8d1cc; -fx-background-color: White;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Hướng Dẫn: " textFill="#012970">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="59.0" text="- Chọn vào đề thi muốn thi trong bảng bên dưới" textFill="#012970">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="95.0" text="- Hệ thống sẽ chuyển đến phần thi dành cho bạn" textFill="#012970">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="table_ListExam" layoutX="7.0" layoutY="216.0" onMouseClicked="#HandClick_Exam" prefHeight="425.0" prefWidth="814.0">
+        <columns>
+          <TableColumn fx:id="col_room" prefWidth="134.39999103546143" text="Phòng Thi" />
+          <TableColumn fx:id="col_title" prefWidth="222.40003967285156" text="Tiêu Đề" />
+            <TableColumn fx:id="col_quantity" prefWidth="146.39996337890625" text="Số Lượng Câu Hỏi" />
+            <TableColumn fx:id="col_time" prefWidth="145.60003662109375" text="Thời Gian" />
+            <TableColumn fx:id="col_creator" prefWidth="161.5999755859375" text="Người Tạo" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

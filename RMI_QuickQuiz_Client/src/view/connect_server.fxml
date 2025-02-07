@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="672.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_ConnectServer">
+   <children>
+      <ImageView fitHeight="231.0" fitWidth="243.0" layoutX="14.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/connect_server.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="368.0" layoutY="43.0" prefHeight="39.0" prefWidth="250.0" text="Kêt Nối Server" textFill="#ae8243">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IP" layoutX="397.0" layoutY="143.0" prefHeight="39.0" prefWidth="225.0" />
+      <TextField fx:id="Port" layoutX="397.0" layoutY="208.0" prefHeight="39.0" prefWidth="225.0" text="1099" />
+      <Button layoutX="420.0" layoutY="283.0" mnemonicParsing="false" onAction="#connect_server" prefHeight="39.0" prefWidth="165.0" style="-fx-background-color: #4bab57;" text="Kết Nối" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="143.0" prefHeight="39.0" prefWidth="59.0" text="IP :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="292.0" layoutY="208.0" prefHeight="39.0" prefWidth="84.0" text=" PORT :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

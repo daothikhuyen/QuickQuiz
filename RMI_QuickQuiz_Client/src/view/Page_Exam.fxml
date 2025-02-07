@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="829.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_Exam">
+   <children>
+      <Label alignment="CENTER" prefHeight="43.0" prefWidth="829.0" style="-fx-background-color: #ffcc00;" text="THI TRẮC NGHIỆM" textFill="#ff0b0b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="238.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/student.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="23.0" layoutY="78.0" prefHeight="127.0" prefWidth="466.0" style="-fx-border-color: #43986d;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="Mã Đề Thi: ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_code" layoutX="100.0" layoutY="12.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #d8d1cc;" text="9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="194.0" layoutY="14.0" text="Tiêu Đề :">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Title" layoutX="263.0" layoutY="12.0" prefHeight="24.0" prefWidth="196.0" style="-fx-background-color: #d9edf7;" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="64.0" text="Mã Phòng Thi">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Room" layoutX="21.0" layoutY="89.0" prefHeight="24.0" prefWidth="85.0" style="-fx-background-color: #d9edf7;" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="136.0" layoutY="64.0" text="Số Lượng Câu Hỏi">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Quantity" layoutX="136.0" layoutY="89.0" prefHeight="24.0" prefWidth="110.0" style="-fx-background-color: #d9edf7;" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="276.0" layoutY="64.0" text="Thời Gian">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Time" layoutX="276.0" layoutY="89.0" prefHeight="24.0" prefWidth="110.0" style="-fx-background-color: #d9edf7;" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="393.0" layoutY="92.0" text="Phút">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="526.0" layoutY="76.0" prefHeight="127.0" prefWidth="289.0" style="-fx-border-color: #e24c58;">
+         <children>
+            <Label layoutX="13.0" layoutY="15.0" text="Mã :">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_UserId" layoutX="95.0" layoutY="12.0" prefHeight="24.0" prefWidth="124.0" style="-fx-background-color: #ffffcd;" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="13.0" layoutY="73.0" text="Họ Và Tên:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_Username" layoutX="97.0" layoutY="71.0" prefHeight="24.0" prefWidth="163.0" style="-fx-background-color: #ffffcd;" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="171.0" layoutY="55.0" text="Thông Tin Đề Thi">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="609.0" layoutY="55.0" text="Thông Tin Thí Sinh" textFill="#1d2ddc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="17.0" layoutY="227.0" prefHeight="0.0" prefWidth="796.0" />
+      <Label layoutX="36.0" layoutY="244.0" text="Câu Số :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_numQuestion" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="242.0" prefHeight="24.0" prefWidth="79.0" style="-fx-background-color: #d8d1cc;" text="9" textFill="#1d32c2">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="288.0" text="Câu Hỏi :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_Question" layoutX="110.0" layoutY="275.0" prefHeight="43.0" prefWidth="644.0" style="-fx-background-color: White;" text="Label">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="332.0" text="Đáp Án :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rid_A" layoutX="110.0" layoutY="333.0" mnemonicParsing="false" text="A">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Group_Answer" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rid_B" layoutX="110.0" layoutY="373.0" mnemonicParsing="false" text="B" toggleGroup="$Group_Answer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rid_C" layoutX="110.0" layoutY="411.0" mnemonicParsing="false" text="C" toggleGroup="$Group_Answer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rid_D" layoutX="109.0" layoutY="456.0" mnemonicParsing="false" text="D" toggleGroup="$Group_Answer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="lb_A" layoutX="167.0" layoutY="324.0" prefHeight="34.0" prefWidth="586.0" text="Label">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_B" layoutX="167.0" layoutY="365.0" prefHeight="34.0" prefWidth="586.0" text="Label">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_C" layoutX="167.0" layoutY="404.0" prefHeight="34.0" prefWidth="586.0" text="Label">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_D" layoutX="167.0" layoutY="448.0" prefHeight="34.0" prefWidth="586.0" text="Label">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="10.0" layoutY="503.0" prefHeight="3.0" prefWidth="804.0" />
+      <Button layoutX="640.0" layoutY="549.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="26.0" prefWidth="154.0" text="Câu Tiếp Theo">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="501.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/clock_exam.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lb_ProcessTime" layoutX="568.0" layoutY="245.0" prefHeight="18.0" prefWidth="114.0" text="0:00" textFill="#ec0c0c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="73.0" fitWidth="69.0" layoutX="356.0" layoutY="527.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/exam.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnComplete" layoutX="55.0" layoutY="544.0" mnemonicParsing="false" onAction="#handClick_Complete" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #10c51e;" text="Hoàn Tất" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Result" layoutX="36.0" layoutY="549.0" mnemonicParsing="false" onAction="#handClick_Result" prefHeight="35.0" prefWidth="124.0" style="-fx-background-color: #17a2b8;" text="Xem Kết Quả" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_Prev" layoutX="501.0" layoutY="547.0" mnemonicParsing="false" onAction="#btnPrev" prefHeight="27.0" prefWidth="114.0" text="Câu Trước Đó">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

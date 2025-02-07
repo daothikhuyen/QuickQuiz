@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="509.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_Result">
+   <children>
+      <Label alignment="CENTER" layoutX="-5.0" prefHeight="43.0" prefWidth="515.0" style="-fx-background-color: #329900;" text="THÔNG BÁO KẾT QUẢ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="104.0" layoutY="116.0" prefHeight="31.0" prefWidth="155.0" text="Số Câu Trả Lời Đúng :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="104.0" layoutY="157.0" prefHeight="31.0" prefWidth="155.0" text="Số Câu Trả Lời Sai :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_NumCorrect" layoutX="299.0" layoutY="116.0" prefHeight="31.0" prefWidth="87.0" text="4.0" textFill="#1acc17">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_NumIncorrect" layoutX="299.0" layoutY="157.0" prefHeight="31.0" prefWidth="87.0" text="4.0" textFill="#ef240d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="208.0" prefHeight="18.0" prefWidth="162.0" text="Thời Gian Hoàn Thành :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_NumTimeComplete" layoutX="246.0" layoutY="202.0" prefHeight="31.0" prefWidth="106.0" text="22 giây" textFill="#a61ba4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="277.0" text="Điểm :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_NumScore" layoutX="143.0" layoutY="273.0" prefHeight="35.0" prefWidth="77.0" text="10" textFill="#ef240d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="277.0" text="Hạng :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_level" layoutX="382.0" layoutY="273.0" prefHeight="35.0" prefWidth="77.0" text="100" textFill="#271a99">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="193.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #f39c0e; -fx-border-color: black; -fx-border-radius: 5px; -fx-background-radius: 10px;" text="Thoát" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

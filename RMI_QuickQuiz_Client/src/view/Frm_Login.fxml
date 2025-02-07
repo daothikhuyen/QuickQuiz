@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="713.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller_User">
+   <children>
+      <AnchorPane layoutX="363.0" prefHeight="436.0" prefWidth="349.0">
+         <children>
+            <Label layoutX="105.0" layoutY="37.0" text="ĐĂNG NHẬP" textAlignment="CENTER" textFill="#d4bf44">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="84.0" text="Email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" layoutX="37.0" layoutY="111.0" prefHeight="40.0" prefWidth="242.0" style="-fx-border-radius: 7px; -fx-border-color: #78c0c9; -fx-background-radius: 7px;" text="daothikhuyen30@gmail.com">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="37.0" layoutY="172.0" text="Mật Khẩu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPassword" layoutX="40.0" layoutY="200.0" prefHeight="40.0" prefWidth="242.0" style="-fx-border-color: #78c0c9; -fx-border-radius: 7px; -fx-background-radius: 7px;" text="123456789">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="37.0" layoutY="256.0" mnemonicParsing="false" onAction="#Activite_Login" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #10c51e; -fx-border-radius: 10px; -fx-background-radius: 7px;" text="Đăng Nhập" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="205.0" layoutY="256.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: #e24c58; -fx-border-radius: 10px; -fx-background-radius: 7px;" text="Thoát" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="205.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnRegister" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #006ce3; -fx-border-radius: 10px; -fx-background-radius: 7px;" text="Đăng Ký" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="315.0" fitWidth="467.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
